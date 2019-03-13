@@ -19,7 +19,7 @@ class UsersTableSeeder extends Seeder
             /** @var User $u */
             if ($u->id == 1) {
                 $u->assignRole(['super-admin']);
-            } else {
+            } else if ($u->id == 2) {}{
                 $u->assignRole('user');
             }
         });

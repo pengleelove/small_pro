@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use Exception;
+use Illuminate\Auth\AuthenticationException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 
 class Handler extends ExceptionHandler
@@ -14,6 +15,7 @@ class Handler extends ExceptionHandler
      */
     protected $dontReport = [
         //
+        AuthenticationException::class,
     ];
 
     /**
@@ -25,6 +27,8 @@ class Handler extends ExceptionHandler
         'password',
         'password_confirmation',
     ];
+
+
 
     /**
      * Report or log an exception.
@@ -46,6 +50,13 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        //return response()->json([
+        //    'file' => $exception->getFile(),
+        //    'line' => $exception->getLine(),
+        //    'message' => $exception->getMessage(),
+        //    'code'  => $exception->getCode(),
+        //    //'status'=> $exception->getTrace(),
+        //]);
         return parent::render($request, $exception);
     }
 }

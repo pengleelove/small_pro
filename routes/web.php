@@ -11,6 +11,17 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('home.index');
+})->middleware('auth');
+
+Route::group(['namespace' => 'User\API', 'middleware' => []], function () {
+    Route::resource('users', 'UserAPIController');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

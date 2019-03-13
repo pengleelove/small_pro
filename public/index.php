@@ -7,6 +7,8 @@
  * @author   Taylor Otwell <taylor@laravel.com>
  */
 
+use Psy\VarDumper\Dumper;
+
 define('LARAVEL_START', microtime(true));
 
 /*

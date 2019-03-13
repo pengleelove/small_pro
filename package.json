@@ -11,7 +11,7 @@
     },
     "devDependencies": {
         "axios": "^0.18",
-        "bootstrap": "^4.0.0",
+        "bootstrap": "^4.3.1",
         "cross-env": "^5.1",
         "jquery": "^3.2",
         "laravel-mix": "^4.0.7",
@@ -22,5 +22,18 @@
         "sass-loader": "^7.1.0",
         "vue": "^2.5.17"
     },
-    "version": "1.10.1"
+    "version": "1.10.1",
+    "dependencies": {
+        "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+        "babel-loader": "8.0.2",
+        "buefy": "^0.7.3",
+        "element-ui": "^2.6.1",
+        "js-cookie": "^2.2.0",
+        "nprogress": "^0.2.0",
+        "path": "^0.12.7",
+        "vue-easytable": "^1.7.2",
+        "vue-element-admin": "^3.9.3",
+        "vue-router": "^3.0.2",
+        "vuex": "^3.1.0"
+    }
 }

@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*（必需）*/
+/*---------重置和全局使用的基本定义---------*/
+/*---------重置---------*/
+html{font-size: 62.5%; /*16px X 62.5=10px*/ -webkit-text-size-adjust:none; -ms-text-size-adjust:none;-ms-touch-action: none;}
+body{margin:0;font-size:1.4em; font-family: "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", "Segoe UI", "Tahoma", "宋体b8b体", "SimSun", "sans-serif";}
+
+p,ul,ol,form,dl,h1,h2,h3,h4,h5,h6{ margin-top:0; margin-bottom:0; font-family: "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", "Segoe UI", "Tahoma", "宋体b8b体", "SimSun", "sans-serif"}
+
+#app-container {
+  height: 100%;
+}

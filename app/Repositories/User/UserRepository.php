@@ -25,9 +25,7 @@ class UserRepository
         $where = [];
         $hasPer    = $this->getPermission();
         if (!$hasPer) {
-            $where[] = [
-                'email' => Auth::user()->email,
-            ];
+            $where['email'] = Auth::user()->email;
         }
 
         return $where;

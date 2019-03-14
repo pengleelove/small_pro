@@ -178,6 +178,7 @@ return [
         App\Providers\RouteServiceProvider::class,
         // role permission service
         PermissionServiceProvider::class,
+        zgldh\QiniuStorage\QiniuFilesystemServiceProvider::class,
 
     ],
 

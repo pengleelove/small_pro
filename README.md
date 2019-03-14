@@ -10,6 +10,7 @@ A simple user management system
 1. composer install
 	* cp .env.example .env
 	* php artisan key:generate
+	php artisan admin:install
 2. yarn install
 3. php artisan migrate
 4. php artisan db:seed 
